@@ -1,11 +1,27 @@
 :root{
-	--nav-bcg: #3C3C3C85;
+	--body-bcgcolor-3c3c3c: #3C3C3C;
+	--nav-bcg-3c3c3c85: #3C3C3C85;
+	--box-bcg-3c3c3c70: #3C3C3C70;
+	--content-bcg-312F2F: #312F2F;
+	--footer-bcg-343333: #343333;
+	
+	--drop-shadow: 0px 4px 4px 0px #00000025;
+	
+	--color-ffffff: #FFFFFF;
+	--color-32bdf9: #32BDF9;
+	--color-ff6e00: #FF6E00;
+	--color-5f6368: #5F6368;
+	
+	--border-e5e5e5: #E5E5E5;
+	
+	--border-radius-6px: 6px;
 	
 	--fs96: 96px;
 	--fs64: 64px;
 	--fs50: 50px;
 	--fs48: 48px;
 	--fs40: 40px;
+	--fs38: 38px;
 	--fs36: 36px;
 	--fs32: 32px;
 	--fs24: 24px;
