@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Краткое описание страницы -->
+  <meta name="description" content=""/>
+  <!-- Ключевые слова страницы, не больше 20-->
+  <meta name="keywords" content=""/>
+  
+  <!-- Запрет индексации страницы полностью -->
+  <!-- <meta name="robots" content="noindex,nofollow"/>-->
+  <!-- или -->
+  <meta name="robots" content="none"/>
+  
+  <!-- Запрет индексации ссылок и изображении на странице -->
+  <meta name="robots" content="noimageindex, nofollow"/>
+  
+  <!-- Автор страницы -->
+  <meta name="Author" content=""/>
+  <!-- Авторские права -->
+  <meta name="Copyright" content=""/>
+  <!-- Адресс автора -->
+  <meta name="Address" content=""/>
+  
+  <!--  -->
+  <!--
+  <meta name="" content=""/>
+  -->
+  
+  <title> page</title>
+  <link href="./static/css/globals/reset.css" rel="stylesheet" text="text/css"/>
+  
+  <!-- CSS 
+  <link href="./css/global.css" rel="stylesheet" type="text/css"/>
+  <link href="./static/css/global.css" rel="stylesheet" type="text/css"/>
+  -->
+
+</head>
+<body>
+
+	<!--
+	
+	https://console.firebase.google.com/project/foryourbusiness-de00d/database/foryourbusiness-de00d-default-rtdb/data?fb_gclid=CjwKCAiAlPu9BhAjEiwA5NDSA2uPB0FLESq6exKM1FZL_BeEp6GmtTMpZpkwFexCQw28HSPsmavA1BoC0oEQAvD_BwE
+	
+	https://firebase.google.com/docs/database/web/read-and-write?hl=en&authuser=0#web
+	-->
+	<script src="./static/js/firebase_test1.js"></script>
+	<script type="module" defer>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js";
+
+// Конфигурация Firebase (замени своими данными)
+window.firebaseConfig = {
+	apiKey: "AIzaSyBtIrT2oIbrOMruOfrY8yaeFiAwrJLjXAQ",
+	authDomain: "foryourbusiness-de00d.firebaseapp.com",
+	databaseURL: "https://foryourbusiness-de00d-default-rtdb.firebaseio.com",
+	projectId: "foryourbusiness-de00d",
+	storageBucket: "foryourbusiness-de00d.firebasestorage.app",
+	messagingSenderId: "287215964713",
+	appId: "1:287215964713:web:dd65f51fb5f43a836b4238",
+	measurementId: "G-QBS3M016MX"
+};
+
+window.appFbe = initializeApp(window.firebaseConfig);
+window.databaseFbe = getDatabase(window.appFbe);
+
+c(45)
+// Пример записи данных
+/*function writeUserData(userId, name, email, imageUrl) {
+  const db = getDatabase();
+  set(ref(db, 'users/' + userId), {
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+writeUserData(1, 'Anni', 'email_Anni@mail.ru', 'https://m.media-amazon.com/images/S/pv-target-images/16627900db04b76fae3b64266ca161511422059cd24062fb5d900971003a0b70._SX1080_FMjpg_.jpg')
+*/
+
+// Пример записи данных 2
+/*
+function writeUserData([userId, name, email, imageUrl],set,ref,db) {
+  //const db = getDatabase();
+  set(ref(databaseFbe, 'users/' + userId), {
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+*/
+
+// Пример записи данных 3
+writeUserData([
+	5, 
+	'Vera',
+	'email_Vera@mail.ru',
+	''],
+	set,
+	ref,
+	databaseFbe
+	)
+// Пример чтения данных
+	</script>
+	<script src="./static/js/test.js">
+	</script>
+	<!--<script defer>
+document.addEventListener("DOMContentLoaded",function (){
+	c(appFbe)
+	c(databaseFbe)
+	
+})
+	
+	</script>-->
+</body>
+</html>
