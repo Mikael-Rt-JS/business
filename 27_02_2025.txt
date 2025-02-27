@@ -1,0 +1,66 @@
+firebase full working tipe last 27/02/2025
+
+<script type="module" defer>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js";
+
+// Конфигурация Firebase (замени своими данными)
+// https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Client-side_APIs/Client-side_storage
+
+window.firebaseConfig = cnnt
+
+/*{
+	apiKey: "AIzaSyBtIrT2oIbrOMruOfrY8yaeFiAwrJLjXAQ",
+	authDomain: "foryourbusiness-de00d.firebaseapp.com",
+	databaseURL: "https://foryourbusiness-de00d-default-rtdb.firebaseio.com",
+	projectId: "foryourbusiness-de00d",
+	storageBucket: "foryourbusiness-de00d.firebasestorage.app",
+	messagingSenderId: "287215964713",
+	appId: "1:287215964713:web:dd65f51fb5f43a836b4238",
+	measurementId: "G-QBS3M016MX"
+};*/
+
+window.appFbe = initializeApp(window.firebaseConfig);
+window.databaseFbe = getDatabase(window.appFbe);
+
+//c(45)
+
+// Пример записи данных
+/*function writeUserData(userId, name, email, imageUrl) {
+  const db = getDatabase();
+  set(ref(db, 'users/' + userId), {
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+writeUserData(1, 'Anni', 'email_Anni@mail.ru', 'https://m.media-amazon.com/images/S/pv-target-images/16627900db04b76fae3b64266ca161511422059cd24062fb5d900971003a0b70._SX1080_FMjpg_.jpg')
+*/
+
+// Пример записи данных 2
+/*
+function writeUserData([userId, name, email, imageUrl],set,ref,db) {
+  //const db = getDatabase();
+  set(ref(databaseFbe, 'users/' + userId), {
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+*/
+
+// Пример записи данных 3
+/*writeUserData([
+	5, 
+	'Vera',
+	'email_Vera@mail.ru',
+	''],
+	set,
+	ref,
+	databaseFbe
+	)*/
+
+//getAllDate(databaseFbe,'users',ref,onValue)
+
+// Пример чтения данных
+	</script>

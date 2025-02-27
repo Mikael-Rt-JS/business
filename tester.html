@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Краткое описание страницы -->
+  <meta name="description" content=""/>
+  <!-- Ключевые слова страницы, не больше 20-->
+  <meta name="keywords" content=""/>
+  
+  <!-- Запрет индексации страницы полностью -->
+  <!-- <meta name="robots" content="noindex,nofollow"/>-->
+  <!-- или -->
+  <meta name="robots" content="none"/>
+  
+  <!-- Запрет индексации ссылок и изображении на странице -->
+  <meta name="robots" content="noimageindex, nofollow"/>
+  
+  <!-- Автор страницы -->
+  <meta name="Author" content=""/>
+  <!-- Авторские права -->
+  <meta name="Copyright" content=""/>
+  <!-- Адресс автора -->
+  <meta name="Address" content=""/>
+  
+  <!--  -->
+  <!--
+  <meta name="" content=""/>
+  -->
+  
+  <title>Tester page</title>
+  <link href="./static/css/globals/reset.css" rel="stylesheet" text="text/css"/>
+  
+  <!-- CSS 
+  <link href="./css/global.css" rel="stylesheet" type="text/css"/>
+  <link href="./static/css/global.css" rel="stylesheet" type="text/css"/>
+  -->
+
+</head>
+<body>
+	<a href="https://t.me/jumppay_bot" target="_blank">jumppay_bot</a>
+	
+	<!--
+	https://console.firebase.google.com/project/foryourbusiness-de00d/database/foryourbusiness-de00d-default-rtdb/data?fb_gclid=CjwKCAiAlPu9BhAjEiwA5NDSA2uPB0FLESq6exKM1FZL_BeEp6GmtTMpZpkwFexCQw28HSPsmavA1BoC0oEQAvD_BwE
+	https://firebase.google.com/docs/database/web/read-and-write?hl=en&authuser=0#web
+	-->
+	
+
+	
+	<script type="module" defer>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js";
+
+// Конфигурация Firebase (замени своими данными)
+// https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Client-side_APIs/Client-side_storage
+
+window.firebaseConfig ={
+	apiKey: "AIzaSyBtIrT2oIbrOMruOfrY8yaeFiAwrJLjXAQ",
+	authDomain: "foryourbusiness-de00d.firebaseapp.com",
+	databaseURL: "https://foryourbusiness-de00d-default-rtdb.firebaseio.com",
+	projectId: "foryourbusiness-de00d",
+	storageBucket: "foryourbusiness-de00d.firebasestorage.app",
+	messagingSenderId: "287215964713",
+	appId: "1:287215964713:web:dd65f51fb5f43a836b4238",
+	measurementId: "G-QBS3M016MX"
+};
+
+window.appFbe = initializeApp(window.firebaseConfig);
+window.databaseFbe = getDatabase(window.appFbe);
+
+	</script>
+	<script defer>
+	// https://doka.guide/js/session-storage/
+	
+	// Запись
+	// Записываем данные:
+	window.sessionStorage.setItem('name', 'Дока Дог')
+	
+	// Чтение
+	// При чтении ранее записанных данных по ключу name мы получим Дока Дог:
+	// если по этому ключу нет значения, то метод вернёт null.
+	let name = window.sessionStorage.getItem('name')
+	console.log(name)
+	window.sessionStorage.setItem('name', 'Собака Дока')
+	name = window.sessionStorage.getItem('name')
+	console.log(name)
+	
+	// Удаление
+	//даляет запись из хранилища removeItem('ключ').Он успешно выполнится даже если указанного ключа не существует в хранилище.
+	window.sessionStorage.removeItem('name')
+	
+	// Очистка хранилища
+	// Метод clear() очищает хранилище полностью.
+	// window.sessionStorage.clear()
+	
+	// Количество полей в хранилище
+	// Используя свойство length, можно узнать, сколько всего полей было записано в хранилище.
+	// window.sessionStorage.length
+	
+	// Получение ключа по индексу
+	/*
+	Метод key() получает ключ по индексу.
+	Значения в хранилище хранятся в порядке их добавления,
+	поэтому значение, добавленное первым, будет храниться в позиции 0 и так далее.
+	*/
+	// console.log(window.sessionStorage.key(0))
+	
+	/*
+	Таким образом, используя количество полей в хранилище и получение ключа по индексу, можно перебрать все значения в хранилище.
+	*/
+	/*
+	const sessionStorageSize = window.sessionStorage.length
+	for (let i = 0; i < sessionStorageSize; i++) {
+	  console.log(window.sessionStorage.getItem(sessionStorage.key(i)))
+	}
+	*/
+	
+	// https://doka.guide/js/bom/
+	</script>
+	
+	
+	
+	<!--<script defer>
+document.addEventListener("DOMContentLoaded",function (){
+	c(appFbe)
+	c(databaseFbe)
+})
+	
+	</script>-->
+</body>
+</html>

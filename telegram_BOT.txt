@@ -1,0 +1,46 @@
+Поздравляю с новым ботом. Вы найдете его по адресу -
+ t.me/jumppay_bot
+ 
+ Теперь вы можете добавить описание, раздел и изображение профиля для вашего бота.
+ Список команд см. в /help. Кстати, когда вы закончите создавать своего классного бота,
+ обратитесь в нашу службу поддержки ботов, если вам нужно лучшее имя пользователя для него.
+ Просто убедитесь, что бот полностью работоспособен, прежде чем делать это.
+ 
+ Используйте этот токен для доступа к HTTP API:
+ 7554180190:AAG6BhEkpLVxQ0fjmAtur4RGrvMi_K5tsiQ
+ 
+ 7554180190
+ 
+ Держите свой токен в безопасности и храните его в безопасном месте. Любой может использовать его для управления вашим ботом.
+ 
+ Описание API бота можно найти на этой странице: https://core.telegram.org/bots/api.
+ 
+ new group->add ( paybridge_t )
+ group name -> tester_b
+ 
+ https://web.telegram.org/a/#-4670585840
+chat group: tester_b 
+id: -4670585840 //working send
+ 
+ https://web.telegram.org/a/#7554180190
+ username: @jumppay_bot
+ id: 7554180190 //no working
+ 
+ BotFather
+ https://web.telegram.org/a/#93372553
+ 
+ Get My ID (bot)
+ https://web.telegram.org/a/#460693903
+ 
+ my id
+Your user ID: 7423872095
+Current chat ID: 7423872095
+username: @javscript16
+
+Emi 
+Your user ID: 7423872095
+Current chat ID: 7423872095
+Forwarded from: 1383722643
+
+Артем темыч
+2114763369

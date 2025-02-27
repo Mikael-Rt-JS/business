@@ -1,0 +1,55 @@
+.s_difficulties{
+	display: grid;
+	grid-template-columns: minmax(120px,180px) 3fr minmax(120px,180px);
+	grid-template-rows: auto;
+	margin: 98px 0px;
+}
+.s_diff-block{
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+}
+.sdiff_box{
+	background: var(--content-bcg-312F2F);
+	border-radius: var(--border-radius-6px);
+	-webkit-box-shadow: var(--drop-shadow);
+	-moz-box-shadow: var(--drop-shadow);
+	box-shadow: var(--drop-shadow);
+	color: var(--color-ffffff);
+	padding: 50px;
+}
+.sdiff_box h3{
+	font-size: var(--fs36);
+}
+.sdiff_box p{
+	font-size: var(--fs18);
+}
+
+.s_db-boxl{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.s_db-boxr{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.s_db-boxr-img{
+	justify-self: end;
+}
+.sdiff_box-txt{
+	align-self: center;
+	display: grid;
+	gap: 20px;
+}
+
+.s_db-boxc{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: 20px;
+}
+.s_db-boxc p{
+	text-align:center;
+	padding: 0px 130px;
+}
