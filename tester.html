@@ -71,51 +71,29 @@ window.databaseFbe = getDatabase(window.appFbe);
 
 	</script>
 	<script defer>
-	// https://doka.guide/js/session-storage/
+	// https://learn.javascript.ru/onload-ondomcontentloaded
+	//life_cycle.js
 	
-	// Запись
-	// Записываем данные:
-	window.sessionStorage.setItem('name', 'Дока Дог')
+class Validate{
 	
-	// Чтение
-	// При чтении ранее записанных данных по ключу name мы получим Дока Дог:
-	// если по этому ключу нет значения, то метод вернёт null.
-	let name = window.sessionStorage.getItem('name')
-	console.log(name)
-	window.sessionStorage.setItem('name', 'Собака Дока')
-	name = window.sessionStorage.getItem('name')
-	console.log(name)
+}	
 	
-	// Удаление
-	//даляет запись из хранилища removeItem('ключ').Он успешно выполнится даже если указанного ключа не существует в хранилище.
-	window.sessionStorage.removeItem('name')
 	
-	// Очистка хранилища
-	// Метод clear() очищает хранилище полностью.
-	// window.sessionStorage.clear()
+/*
+document.addEventListener("DOMContentLoaded",function (){
+	c('appFbe'+appFbe)
+	c("appFbe\n"+databaseFbe)
+	console.log(1)
+})
+
+window.addEventListener('load', (event) => {
+    // к этому моменту картинка загружена
+	console.log(2)
 	
-	// Количество полей в хранилище
-	// Используя свойство length, можно узнать, сколько всего полей было записано в хранилище.
-	// window.sessionStorage.length
-	
-	// Получение ключа по индексу
-	/*
-	Метод key() получает ключ по индексу.
-	Значения в хранилище хранятся в порядке их добавления,
-	поэтому значение, добавленное первым, будет храниться в позиции 0 и так далее.
-	*/
-	// console.log(window.sessionStorage.key(0))
-	
-	/*
-	Таким образом, используя количество полей в хранилище и получение ключа по индексу, можно перебрать все значения в хранилище.
-	*/
-	/*
-	const sessionStorageSize = window.sessionStorage.length
-	for (let i = 0; i < sessionStorageSize; i++) {
-	  console.log(window.sessionStorage.getItem(sessionStorage.key(i)))
-	}
-	*/
-	
+};
+*/
+
+
 	// https://doka.guide/js/bom/
 	</script>
 	
