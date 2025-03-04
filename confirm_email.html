@@ -25,7 +25,7 @@
 	  <meta name="" content=""/>
 	  -->
 	  
-	  <title>Signup page</title>
+	  <title>Confirm Email page</title>
 	  
 	  <!-- FONTS -->
 	  
@@ -51,7 +51,7 @@
 
 </head>
 <body>
-	<header class="header_option2 header_form">
+	<header class="header header_form">
 		<div class="header_menu">
 		
 			<div class="header_menu-box inter-600">
@@ -92,20 +92,10 @@
 					<a href="./payments.html">Payments</a>
 				</nav><!-- header_nav-menu -->
 				
-				
-				<div class="header_btns">
-					<select id="lang">
-						<option value="en">
-							<img src="" alt="en" title="en"/>
-							EN
-						</option>
-						<option value="ru">
-							<img src="" alt="ru" title="ru"/>
-							RU
-						</option>
-					</select>
+				<!--<div class="header_btns">
 					<a class="btns_g" href="./signin.html">Signin</a>
-				</div><!-- header_btns -->
+					<a class="btns_g" href="./signup.html">Signup</a>
+				</div><!- header_btns -->
 				
 			</div><!-- header_menu-box -->
 			
@@ -114,75 +104,24 @@
 		<div class="header_hero_block hhblock_form">
 			
 			<div class="header_hero-box hhbox-form">
-				<h1 class="main_h1-0 rubik-moonrocks-regular">Signup</h1>
-				
-				<form class="hero_form hero_form-signup inter-600" action="#" method="POST" id="signup_form">
+				<h1 class="main_h1-0 rubik-moonrocks-regular">Confirm Your Email</h1>
+				<h2 class="main_h2 inter-600">To confirm,write the code in the field sent to your email</h2>
+				<form class="hero_form inter-600" action="#" method="">
 					<div class="input_box-ctrl">
-						<label for="company_name">Company name:</label>
-						<input type="text" name="company_name" id="company_name" placeholder="Company name:"/>
-						<p class="err err_company_name"></p>
+						<label for="">Secret code:</label>
+						<input type="password" name="" id="" placeholder="Secret code:"/>
+						<p class="err_"></p>
 					</div>
 					
-					<div class="input_box-ctrl">
-						<label for="name">Your name:</label>
-						<input type="text" name="name" id="name" placeholder="Your name:"/>
-						<p class="err err_name"></p>
-					</div>
-					
-					<div class="input_box-ctrl">
-						<label for="surname">Your surname:</label>
-						<input type="text" name="surname" id="surname" placeholder="Your surname:"/>
-						<p class="err err_surname"></p>
-					</div>
-					
-					<div class="input_box-ctrl">
-						<label for="phone">Person phone:</label>
-						<input type="text" name="phone" id="phone" placeholder="Phone example: 37400000000"/>
-						<p class="err err_phone"></p>
-					</div>
-					
-					<div class="input_box-ctrl">
-						<label for="telegram_id">Telegram your id:</label>
-						<input type="text" name="telegram_id" id="telegram_id" placeholder="Telegram your id:"/>
-						<a class="telegram_box-link" href="https://web.telegram.org/a/#460693903" target="_blank">
-							<span>
-								Get My ID
-							</span>
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M11 17H7C5.61667 17 4.4375 16.5125 3.4625 15.5375C2.4875 14.5625 2 13.3833 2 12C2 10.6167 2.4875 9.4375 3.4625 8.4625C4.4375 7.4875 5.61667 7 7 7H11V9H7C6.16667 9 5.45833 9.29167 4.875 9.875C4.29167 10.4583 4 11.1667 4 12C4 12.8333 4.29167 13.5417 4.875 14.125C5.45833 14.7083 6.16667 15 7 15H11V17ZM8 13V11H16V13H8ZM13 17V15H17C17.8333 15 18.5417 14.7083 19.125 14.125C19.7083 13.5417 20 12.8333 20 12C20 11.1667 19.7083 10.4583 19.125 9.875C18.5417 9.29167 17.8333 9 17 9H13V7H17C18.3833 7 19.5625 7.4875 20.5375 8.4625C21.5125 9.4375 22 10.6167 22 12C22 13.3833 21.5125 14.5625 20.5375 15.5375C19.5625 16.5125 18.3833 17 17 17H13Z" fill="#ADA7A7"/>
-							</svg>
-						</a>
-						<p class="err err_telegram_id"></p>
-					</div>
-					
-					<div class="input_box-ctrl">
-						<label for="password">Password:</label>
-						<input type="text" name="password" id="password" placeholder="Password:"/>
-						<p class="err err_password"></p>
-					</div>
-					
-					<div class="input_box-ctrl">
-						<label for="repeat_password">Password repeat:</label>
-						<input type="text" name="repeat_password" id="repeat_password" placeholder="Password repeat:"/>
-						<p class="err err_repeat_password"></p>
-					</div>
-					
-					<div class="input_box-ctrl">
-						<label for="status">Status:</label>
-						<select name="status" id="status">
-						  <option value="">Director</option>
-						  <option value="dog">Employee</option>
-						</select>
-						<!-- <p class="err_"></p> -->
-					</div>
-					
-					<button class="btns_g inter-600">Signup</button>
+					<button class="btns_g inter-600">Confirmation</button>
+					<a class="back" href="./signin.html">Back</a>
 				</form>
 				
 			</div><!-- header_hero-box -->
 			
 		</div><!-- header_hero_block -->
 	</header>
+	
 	
 	<footer class="footer">
 		<nav class="footer_nav-menu inter-600">
@@ -207,46 +146,5 @@
 			</div>
 		</div><!-- copy_right -->
 	</footer>
-	
-	<script src="./static/js/global.js"></script>
-	<script src="./static/js/citadel/Validate.js"></script>
-	<script type="module" defer>
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
-import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js";
-
-// Конфигурация Firebase (замени своими данными)
-// https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Client-side_APIs/Client-side_storage
-
-window.firebaseConfig ={
-	apiKey: "AIzaSyBtIrT2oIbrOMruOfrY8yaeFiAwrJLjXAQ",
-	authDomain: "foryourbusiness-de00d.firebaseapp.com",
-	databaseURL: "https://foryourbusiness-de00d-default-rtdb.firebaseio.com",
-	projectId: "foryourbusiness-de00d",
-	storageBucket: "foryourbusiness-de00d.firebasestorage.app",
-	messagingSenderId: "287215964713",
-	appId: "1:287215964713:web:dd65f51fb5f43a836b4238",
-	measurementId: "G-QBS3M016MX"
-};
-
-window.appFbe = initializeApp(window.firebaseConfig);
-window.databaseFbe = getDatabase(window.appFbe);
-
-	</script>
-	<script src="./static/js/signup/signup.js" defer></script>
-	<script defer>
-	
-lang.addEventListener("change",e=>changeURLLanguage())
-  
-document.addEventListener("DOMContentLoaded",function (){
-	console.log(1)
-})
-
-window.addEventListener('load', (event) => {
-    // к этому моменту картинка загружена
-	console.log(2)
-	changeLanguage()
-
-});
-	</script>
 </body>
 </html>

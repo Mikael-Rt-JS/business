@@ -70,11 +70,20 @@ body{
 
 .header,
 .header_404,
-.header_option1{
+.header_option1,
+.header_option2{
 	width: 100%;
+}
+.header,
+.header_404,
+.header_option1{
 	height: 100vh;
 }
-.header{
+.header_option2{
+	height: auto;
+}
+
+.header,.header_option2{
 	background: url('../.././images/cabinet_bcg.png') center/cover no-repeat;
 	display: grid;
 	grid-template-columns: minmax(120px,180px) 3fr minmax(120px,180px);
@@ -206,6 +215,9 @@ body{
 	grid-template-rows: auto;
 	/*gap: 10px;*/
 }
+.hero_form-signup button{
+	margin-top: 15px;
+}
 
 .hero_form a{
 	height: auto;
@@ -216,7 +228,8 @@ body{
 	text-transform: none;
 	margin-left: 10px;
 }
-.hero_form input{
+.hero_form input,
+.hero_form select{
 	border-radius: var(--border-radius-6px);
 	border: 1px solid var(--border-e5e5e5);
 	font-size: var(--fs18);
@@ -224,18 +237,33 @@ body{
 	width: 100%;
 	padding: 10px 0px 10px 20px;
 }
-.hero_form input::-webkit-input-placeholder{
+.hero_form select{
+	color: var(--color-ffffff);
+	
+}
+.hero_form select option{
+	color: var(--color-5f6368);
+	
+}
+.hero_form input::-webkit-input-placeholder,
+.hero_form select::-webkit-input-placeholder{
 	font-weight: 600;
 	color: var(--color-ffffff);
 }
-.hero_form input::-moz-placeholder{
+.hero_form select::-webkit-input-placeholder{
+	color: var(--color-5f6368);
+}
+.hero_form input::-moz-placeholder,
+.hero_form select::-moz-placeholder{
 	font-weight: 600;
 	color: var(--color-ffffff);
 }
-.hero_form input::-ms-input-placeholder{
+.hero_form input::-ms-input-placeholder,
+.hero_form select::-ms-input-placeholder{
 	font-weight: 600;
 	color: var(--color-ffffff);
 }
+
 .hero_form label{
 	font-size: var(--fs16);
 	color: var(--color-32bdf9);
@@ -291,4 +319,9 @@ body{
 	gap: 10px;
 	margin-top: 0;
 	color: var(--color-ADA7A7);
+}
+
+.err{
+	font-size: var(--fs12);
+	color: gold;/*var(--color-ff6e00);*/
 }
